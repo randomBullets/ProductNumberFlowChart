@@ -1,3 +1,4 @@
+```mermaid
 graph TD
     A[Start] --> B{Select Model}
     B -->|E120| C1[E120]
@@ -34,3 +35,4 @@ graph TD
 
     H1 & H2 & H3 & H4 & H5 & H6 & I1 & I2 & I3 & I4 & J1 & J2 --> K[Generate Part Number]
     K --> L[End]
+```
