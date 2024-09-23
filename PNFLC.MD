@@ -12,6 +12,7 @@ graph TD
     D -->|Option 1| E1[Voltage 1]
     D -->|Option 2| E2[Voltage 2]
     D -->|Option 3| E3[Voltage 3]
+    D -->|Option 4| E4[Voltage 4]
 
     E1 & E2 & E3 --> R{Select Refrigerant}
     R -->|Option 1| R1[R448A]
