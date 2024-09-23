@@ -13,7 +13,7 @@ graph TD
     D -->|Option 2| E2[Voltage 2]
     D -->|Option 3| E3[Voltage 3]
 
-    E1 & E2 & E3 --> F{Select Number of Internal Mini Units}
+    E1 & E2 & E3 --> F{Select Number of Condenser Units}
     F -->|E120/EN120| G1{3-8 units}
     F -->|E90/EN90| G2{3-6 units}
     F -->|E60/EN60| G3{3-4 units}
