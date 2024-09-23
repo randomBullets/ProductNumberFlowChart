@@ -8,7 +8,7 @@ graph TD
     B -->|E60| C5[E60]
     B -->|EN60| C6[EN60]
 
-    C1 & C2 & C3 & C4 & C5 & C6 --> D{Select Voltage}
+     C1 & C2 & C3 & C4 & C5 & C6 --> D{Select Voltage}
     D -->|Option 1| E1[Voltage 1]
     D -->|Option 2| E2[Voltage 2]
     D -->|Option 3| E3[Voltage 3]
