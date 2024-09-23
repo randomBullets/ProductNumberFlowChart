@@ -1,6 +1,6 @@
 ```mermaid
 graph TD
-    A[Start] --> B{Select Chiller Base Model}
+    A[Start] --> B{Select Package Chiller Base Model}
     B -->|E120| C1[E120]
     B -->|EN120| C2[EN120]
     B -->|E90| C3[E90]
@@ -8,12 +8,17 @@ graph TD
     B -->|E60| C5[E60]
     B -->|EN60| C6[EN60]
 
-    C1 & C2 & C3 & C4 & C5 & C6 --> D{Select Chiller Voltage}
+    C1 & C2 & C3 & C4 & C5 & C6 --> D{Select Voltage}
     D -->|Option 1| E1[Voltage 1]
     D -->|Option 2| E2[Voltage 2]
     D -->|Option 3| E3[Voltage 3]
 
-    E1 & E2 & E3 --> F{Select Number of Condenser Units}
+    E1 & E2 & E3 --> R{Select Refrigerant}
+    R -->|Option 1| R1[R448A]
+    R -->|Option 2| R2[Refrigerant 2 TBD]
+    R -->|Option 3| R3[Refrigerant 3 TBD]
+
+    R1 & R2 & R3 --> F{Select Number of Condensing Units}
     F -->|E120/EN120| G1{3-8 units}
     F -->|E90/EN90| G2{3-6 units}
     F -->|E60/EN60| G3{3-4 units}
@@ -33,6 +38,6 @@ graph TD
     G3 --> J1[3 units]
     G3 --> J2[4 units]
 
-    H1 & H2 & H3 & H4 & H5 & H6 & I1 & I2 & I3 & I4 & J1 & J2 --> K[Package Chiller Model Number]
+    H1 & H2 & H3 & H4 & H5 & H6 & I1 & I2 & I3 & I4 & J1 & J2 --> K[Generated Chiller Model Number]
     K --> L[End]
 ```
